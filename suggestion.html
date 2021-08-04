@@ -41,55 +41,59 @@
         </div>
     </nav>
     <div style="height:2px;width:100%;background-color:orange"></div>
-    <div style="margin-top: 15px;margin-left:250px;">
-        <div style="display: inline-block;height: 300px;width:220px;background-color:orange;border-radius: 10px;margin-right: 15px;">
-            
-            <div style="margin-left: 45px;margin-top: 10px;">
-                <img src="image1.jpeg" style="height: 130px;width:130px;border-radius: 50%;" alt="">
-            </div>
-            
-            <div style="text-align: center;font-size: 1.3em;color:rgb(8, 80, 80);margin-top: 15px;">
-                Judy Atieno
-            </div>
-            <div style="width: 200px;height:1px;background-color: grey;margin-left: 5px;margin-top: 15px;"></div>
-            <div  style="text-align: center;color:rgb(8, 80, 80);margin-top: 15px;font-family: cursive;">Operations Manger</div>
-            <div style="width: 200px;height:1px;background-color: grey;margin-left: 5px;margin-top: 10px;"></div>
-            <div  style="text-align: center;color:white;margin-top: 10px;font-family: cursive;">judyatieno@gmail.com</div>
-        </div>
-
-        <div style="display: inline-block;height: 300px;width:220px;background-color: orange;border-radius: 10px;margin-right: 15px;">
-            
-            <div style="margin-left: 45px;margin-top: 10px;">
-                <img src="image1.jpeg" style="height: 130px;width:130px;border-radius: 50%;" alt="">
-            </div>
-            
-            <div style="text-align: center;font-size: 1.3em;color:rgb(8, 80, 80);margin-top: 15px;">
-                Edwin Njunguna
-            </div>
-            <div style="width: 200px;height:1px;background-color: grey;margin-left: 5px;margin-top: 15px;"></div>
-            <div  style="text-align: center;color:rgb(8, 80, 80);margin-top: 15px;font-family: cursive;">Marketing Expert</div>
-            <div style="width: 200px;height:1px;background-color: grey;margin-left: 5px;margin-top: 10px;"></div>
-            <div  style="text-align: center;color:white;margin-top: 10px;font-family: cursive;">edwinjunguna@gmail.com</div>
-        </div>
-
-        <div style="display: inline-block;height: 300px;width:220px;background-color: orange;border-radius: 10px;margin-right: 15px;">
-            
-            <div style="margin-left: 45px;margin-top: 10px;">
-                <img src="image1.jpeg" style="height: 130px;width:130px;border-radius: 50%;" alt="">
-            </div>
-            
-            <div style="text-align: center;font-size: 1.3em;color:rgb(8, 80, 80);margin-top: 15px;">
-                Jeff Omondi
-            </div>
-            <div style="width: 200px;height:1px;background-color: grey;margin-left: 5px;margin-top: 15px;"></div>
-            <div  style="text-align: center;color:rgb(8, 80, 80);margin-top: 15px;font-family: cursive;">legal Consultant</div>
-            <div style="width: 200px;height:1px;background-color: grey;margin-left: 5px;margin-top: 10px;"></div>
-            <div  style="text-align: center;color:white;margin-top: 10px;font-family: cursive;">jeffomondi@gmail.com</div>
-        </div>
-
+    <div style="margin-top: 15px;margin-left:370px;width:500px;">
         
+        <form action="receive_suggestion.php" method="POST" style="font-size:19px;color:orange;background-color:rgb(1, 31, 31);padding-left: 20px;padding-bottom: 20px;padding-top: 20px;border-radius: 15px;">
+            <div style="color:white;font-size: 21px;margin-left:100px;font-family: cursive;margin-bottom: 10px;">Suggestion</div>
+            <div style="margin-top:10px;">
+                <div style="display:inline-block;width:150px;">
+                    <label for="" style="font-size:19px;width:250px;">First Name:</label>
+                </div>
+                <div style="display:inline-block;">
+                    <input type="text" min="2" maxlength="200" style="width:300px;height:30px;border-radius:5px;" name="firstname" required>
+                </div>
+            
+            </div>
 
-        
+            <div>
+                <div style="display:inline-block;width:150px;margin-top: 15px;">
+                    <label for="" style="font-size:19px;width:250px;margin-bottom:10px;">Last Name:</label>
+                </div>
+                <div style="display:inline-block;">
+                    <input type="text" min="2" maxlength="200" style="width:300px;height:30px;border-radius:5px;" name="lastname" required>
+                </div>
+                
+                
+            </div>
+
+            <div>
+                <div style="display:inline-block;width:150px;margin-top: 15px;">
+                    <label for="" style="font-size:19px;margin-bottom:10px;">Email:</label>
+                </div>
+                <div style="display:inline-block;">
+                    <input type="email" min="6" maxlength="200" style="width:300px;height:25px;border-radius:5px;" name="email" required>
+                </div>
+                
+                
+            </div>
+
+            <div>
+                <div style="display:inline-block;width:150px;margin-top: 15px;">
+                    <label for="" style="font-size:19px;margin-bottom:10px;">Suggestion</label>
+                </div>
+                <div style="display:inline-block;margin-top: 15px;">
+                    <textarea name="suggestion" minlength="10" maxlength="1000" id="" cols="30" rows="10" style="width:300px;height:60px;border-radius:5px;" required></textarea>
+                    
+                </div>
+                
+                
+            </div>
+
+            <div style="margin-top:18px;margin-left:14px;">
+                <button type="submit" style="background-color:orange;height:40px;width:230px;border-radius:10px;">Submit</button>
+            </div>
+            
+        </form>
     </div>
 </body>
 <footer style="background-color: rgb(1, 31, 31);border-radius: 7px;">
