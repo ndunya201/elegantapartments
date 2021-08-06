@@ -28,12 +28,6 @@ try {
       $email = test_input($_POST["email"]);
       $suggestion = test_input($_POST["suggestion"]);
 
-      $nRows = $conn->query("SELECT * FROM users WHERE email='$email'")->fetchColumn();
-
-      if ( $nRows > 0) {
-        echo "Sorry... username already taken"; 	
-      }
-      else{
         $stmt = $conn->prepare("INSERT INTO feedback (firstname, lastname, email, suggestion) 
         VALUES(?, ?,?,?)");
         
@@ -44,13 +38,7 @@ try {
         $stmt->execute();
         echo "User registered succesfully";
         header("Location: http://localhost/suggestion_submitted.html");
-      }
-        
-      
-      
 
-      
-  
       
      
     }
